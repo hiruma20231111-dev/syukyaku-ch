@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-green-primary: #02b75a;
+  --color-green-deep: #07584e;
+  --color-green-deep-alt: #135d54;
+  --color-orange: #e97617;
+  --color-orange-soft: #eb8f41;
+  --color-mint: #2bbf77;
+  --color-mint-light: #61cd9b;
+  --color-bg-soft: #f2f6f6;
+  --color-ink: #14201c;
+
+  --font-sans: "Noto Sans JP", ui-sans-serif, system-ui, -apple-system,
+    "Hiragino Kaku Gothic ProN", "Yu Gothic", Meiryo, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* 深緑ベールのグラデ（写真セクションの文字可読性） */
+.veil-deep {
+  background: linear-gradient(
+    180deg,
+    rgba(7, 88, 78, 0.64) 0%,
+    rgba(7, 88, 78, 0.44) 50%,
+    rgba(7, 88, 78, 0.74) 100%
+  );
+}
