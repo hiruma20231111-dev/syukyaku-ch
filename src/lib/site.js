@@ -11,7 +11,7 @@ export const FORM_ENDPOINT =
 export const FORM_ANCHOR = "#form";
 
 export const BRAND_NAME = "地域の集客相談エージェント";
-export const OPERATOR = "ローカルSEO最大手 現役社員";
+export const OPERATOR = "Googleマップ集客（MEO）の現場担当";
 
 export const CTA = {
   diagnosis: "無料でマップ集客診断",

@@ -59,7 +59,7 @@ function Hero() {
         <p className="mt-6 max-w-2xl text-sm leading-[1.9] text-white/90 sm:text-base md:text-lg">
           お客様は今日も「Googleマップ」で、あなたの店を探しています。
           <br className="hidden sm:block" />
-          ローカルSEO最大手の“中の人”が、現場で効いている最新情報を個人でお届けします。
+          「地域の集客相談エージェント」が、いま効いている集客の最新情報を、分かりやすくお届けします。
         </p>
         <p className="mt-5 inline-block rounded-full bg-white/10 px-5 py-2.5 text-sm font-bold text-white sm:text-base">
           Googleマップ経由の来店を増やすための、“最低限のやること”が分かります。
@@ -127,15 +127,15 @@ export default function Home() {
       <PhotoSection image="/assets/nature-authority.jpg">
         <Chip tone="mint">運営者について</Chip>
         <Heading tone="white">
-          なぜ、“最大手の中の人”が
+          なぜ、“地域の集客相談エージェント”
           <br className="hidden md:block" />
-          個人で発信するのか。
+          として発信するのか。
         </Heading>
         <p className="mt-6 max-w-2xl text-sm leading-[2] text-white/90 sm:text-base">
-          ローカルSEO（MEO）支援の最大手で、日々店舗の集客に向き合っています。だからこそ届けられるのは、机上の一般論ではなく“現場で今効いている”情報です。会社の看板ではなく、一人の担当者として、あなたの店の景色を良くしたい——そう思って発信しています。
+          Googleマップ集客（MEO）の現場で、日々さまざまな店舗の集客に向き合ってきました。だからこそ届けられるのは、机上の一般論ではなく“現場で今効いている”情報です。売り込みではなく、あなたの店の景色を良くするための相談相手でありたい——そう思って発信しています。
         </p>
         <p className="mt-5 text-sm font-bold text-mint-light">
-          ローカルSEO最大手・現役担当／個人アカウント
+          Googleマップ集客（MEO）の現場より／地域の集客相談エージェント
         </p>
       </PhotoSection>
 
