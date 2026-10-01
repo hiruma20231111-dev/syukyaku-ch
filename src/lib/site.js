@@ -10,8 +10,7 @@ export const FORM_ENDPOINT =
 // 診断CTAはフォームへスクロール
 export const FORM_ANCHOR = "#form";
 
-// TODO: 正式なアカウント名が決まったら差し替え（現在は仮）
-export const BRAND_NAME = "地域の集客相談室";
+export const BRAND_NAME = "地域の集客相談エージェント";
 export const OPERATOR = "ローカルSEO最大手 現役社員";
 
 export const CTA = {
