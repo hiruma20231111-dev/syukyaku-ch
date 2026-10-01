@@ -1,22 +1,23 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Chip } from "./primitives";
 import { FORM_ENDPOINT, LINE_URL } from "../lib/site";
 
 const FIELDS = [
   { name: "name", label: "お名前（ご担当者）", type: "text", required: true, placeholder: "山田 太郎" },
   { name: "shop", label: "店舗名", type: "text", required: true, placeholder: "◯◯カフェ" },
-  { name: "industry", label: "業種", type: "text", required: false, placeholder: "飲食／美容／クリニック など" },
-  { name: "area", label: "エリア（市区町村）", type: "text", required: false, placeholder: "大阪市北区 など" },
+  { name: "email", label: "メールアドレス", type: "email", required: true, placeholder: "you@example.com", hint: "診断結果のお届け先です。" },
+  { name: "industry", label: "業種（任意）", type: "text", required: false, placeholder: "飲食／美容／クリニック など" },
+  { name: "area", label: "エリア（任意）", type: "text", required: false, placeholder: "大阪市北区 など" },
   {
     name: "mapUrl",
-    label: "GoogleマップのURL または 店舗の住所",
+    label: "GoogleマップのURL または 店舗の住所（任意）",
     type: "text",
-    required: true,
+    required: false,
     placeholder: "https://maps.app.goo.gl/... または 住所",
-    hint: "診断は、あなたの店のGoogleマップ掲載を見て行います。",
+    hint: "分かる範囲でOK。なくても大丈夫です（あると診断がより正確になります）。",
     full: true,
   },
-  { name: "email", label: "メールアドレス", type: "email", required: true, placeholder: "you@example.com", hint: "診断結果のお届け先です。" },
   { name: "tel", label: "電話番号（任意）", type: "tel", required: false, placeholder: "090-0000-0000" },
 ];
 
@@ -141,7 +142,13 @@ export default function DiagnosisForm() {
               className="mt-0.5 h-4 w-4 shrink-0 accent-[#02b75a]"
             />
             <span>
-              入力内容を、診断結果のご連絡・ご相談対応の目的で利用することに同意します。
+              <Link
+                to="/privacy"
+                className="font-bold text-green-deep underline underline-offset-2"
+              >
+                プライバシーポリシー
+              </Link>
+              に同意のうえ、入力内容を診断結果のご連絡・ご相談対応の目的で利用することに同意します。
             </span>
           </label>
 
