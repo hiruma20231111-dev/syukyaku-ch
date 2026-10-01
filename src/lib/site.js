@@ -5,7 +5,7 @@ export const LINE_URL = "https://line.me/ti/p/3vXUc-qdjs";
 // 未設定（空）の場合は送信をスキップして完了画面のみ表示（デモ用）。
 // ※ setup: docs/google-form-setup.md の手順で発行したURLを貼る
 export const FORM_ENDPOINT =
-  "https://script.google.com/macros/s/AKfycbwe2eGuochoSr3WQ5SZ955cMvftdLU3HlprtE7-DDF2c6YpJ6xD9PDD_evfTkmNHqZV/exec";
+  "https://script.google.com/macros/s/AKfycbxU68yp7LM2p-6hEAG65G3L61pPGIBs-xfyj4SVI-kqFkMNUD7QopEuY_Iohmb9vAiq/exec";
 
 // 診断CTAはフォームへスクロール
 export const FORM_ANCHOR = "#form";
